@@ -1,3 +1,3 @@
 layout: page
 title: "GS Baseball"
-permalink: /kollinmeubanks.gsbaseball
+permalink: https://github.com/kollinmeubanks/gsbaseball.git
