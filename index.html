@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GS Baseball Team Store</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+      background: #f5f5f5;
+    }
+    h1 { color: #0b3d91; }
+    #sqd-container {
+      width: 100%;
+      min-height: 800px;
+      background: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>GS Baseball Team Store</h1>
+
+  <div id="sqd-container"></div>
+
+  <script src="https://d2c-cta.s3-us-west-2.amazonaws.com/build/sqd/index.js"></script>
+  <script>
+    window.onload = function() {
+      new sqd({
+        container: 'sqd-container',
+        moduleType: 'standard',
+        lockerId: '2872574',
+        environment: 'production',
+        theme: {
+          fontFamily: "'Lato', sans-serif",
+          color: '#2D3237',
+          backgroundColor: '#FFFFFF',
+          accentColor: '#8BC959'
+        }
+      });
+    };
+  </script>
+</body>
+</html>
