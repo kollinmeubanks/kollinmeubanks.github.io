@@ -3,29 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GS Baseball Team Store</title>
+  <title>Georgia Stingerz Team Store</title>
+
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 20px;
-      text-align: center;
-      background: #f5f5f5;
+      font-family: Arial, sans-serif;
+      background-color: #F5F8FC;
+      color: #0A2342;
     }
-    h1 { color: #0b3d91; }
+
+    .header {
+      background: linear-gradient(90deg, #0A2342, #4FA8FF);
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,.2);
+    }
+
+    .logo {
+      max-width: 180px;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 42px;
+      letter-spacing: 2px;
+    }
+
+    .subtitle {
+      margin-top: 10px;
+      font-size: 18px;
+      opacity: .9;
+    }
+
+    .store-container {
+      max-width: 1400px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
     #sqd-container {
-      width: 100%;
-      min-height: 800px;
       background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,.1);
+      min-height: 800px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 30px;
+      margin-top: 40px;
+      background: #0A2342;
+      color: white;
     }
   </style>
 </head>
-<body>
-  <h1>GS Baseball Team Store</h1>
 
-  <div id="sqd-container"></div>
+<body>
+
+  <div class="header">
+
+    <!-- Replace logo.png with your logo file -->
+    <img src="logo.png" class="logo" alt="Georgia Stingerz Logo">
+
+    <h1>GEORGIA STINGERZ</h1>
+
+    <div class="subtitle">
+      Official Team Store
+    </div>
+
+  </div>
+
+  <div class="store-container">
+    <div id="sqd-container"></div>
+  </div>
+
+  <div class="footer">
+    © 2026 Georgia Stingerz Baseball
+  </div>
 
   <script src="https://d2c-cta.s3-us-west-2.amazonaws.com/build/sqd/index.js"></script>
+
   <script>
     window.onload = function() {
       new sqd({
@@ -34,13 +95,14 @@
         lockerId: '2872574',
         environment: 'production',
         theme: {
-          fontFamily: "'Lato', sans-serif",
-          color: '#2D3237',
+          fontFamily: "'Arial', sans-serif",
+          color: '#0A2342',
           backgroundColor: '#FFFFFF',
-          accentColor: '#8BC959'
+          accentColor: '#4FA8FF'
         }
       });
     };
   </script>
+
 </body>
 </html>
